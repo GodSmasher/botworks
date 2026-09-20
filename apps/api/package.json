@@ -1,0 +1,43 @@
+{
+  "name": "@botworks/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsup src/server.ts --format esm",
+    "start": "node dist/server.js",
+    "typecheck": "tsc --noEmit",
+    "clean": "rimraf dist",
+    "manifests": "tsx src/export-manifests.ts",
+    "demo": "tsx src/demo.ts"
+  },
+  "dependencies": {
+    "@botworks/core": "*",
+    "@botworks/types": "*",
+    "@botworks/inbox-triage": "*",
+    "@botworks/document-extract": "*",
+    "@botworks/customer-support": "*",
+    "@botworks/onboarding": "*",
+    "@botworks/follow-up": "*",
+    "@botworks/data-sync": "*",
+    "@botworks/report-generator": "*",
+    "@botworks/appointment": "*",
+    "@botworks/employee-mgmt": "*",
+    "@botworks/inventory": "*",
+    "@botworks/billing": "*",
+    "@botworks/tax-prep": "*",
+    "@botworks/review-analysis": "*",
+    "@hono/node-server": "^1.13.0",
+    "hono": "^4.6.0",
+    "ioredis": "^5.4.0",
+    "dotenv": "^16.4.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.5.0",
+    "rimraf": "^5.0.0"
+  }
+}

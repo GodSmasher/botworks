@@ -1,0 +1,34 @@
+# dependencies
+node_modules/
+
+# builds & caches
+dist/
+.next/
+out/
+coverage/
+*.tsbuildinfo
+.turbo/
+.vercel/
+
+# secrets & local config — never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+service-account*.json
+
+# archives, dumps, logs
+*.tar
+*.tar.gz
+*.zip
+*.dump
+*.bak
+*.log
+
+# editor / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

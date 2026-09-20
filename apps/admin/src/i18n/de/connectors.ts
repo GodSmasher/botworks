@@ -1,0 +1,21 @@
+/** Connectors page. */
+export const connectors: Record<string, string> = {
+  Connectors: 'Connectoren',
+  'All integrations across all tenants': 'Alle Integrationen über alle Tenants hinweg',
+  Total: 'Gesamt',
+  Active: 'Aktiv',
+  Errors: 'Fehler',
+  Types: 'Typen',
+  instance: 'Instanz',
+  instances: 'Instanzen',
+  Unknown: 'Unbekannt',
+  Interval: 'Intervall',
+  'Last sync': 'Letzter Sync',
+  'CRM & lead management': 'CRM & Lead-Management',
+  'Accounting, invoices, contacts': 'Buchhaltung, Rechnungen, Kontakte',
+  'Telephony, call recording, routing': 'Telefonie, Anrufaufzeichnung, Routing',
+  'Appointments, availability, sync': 'Termine, Verfügbarkeit, Sync',
+  'Lead capture & qualification': 'Lead-Erfassung & Qualifizierung',
+  'Email integration, inbox triage': 'E-Mail-Integration, Inbox-Triage',
+  'Messaging, customer service': 'Messaging, Kundenservice',
+}

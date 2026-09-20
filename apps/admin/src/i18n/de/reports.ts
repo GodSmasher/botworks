@@ -1,0 +1,20 @@
+/** Reports page. Keys identical in both languages (Reports, Executive Summary, Pipeline, Pipeline (EUR), Tenant, Leads, Conversion) are omitted. */
+export const reports: Record<string, string> = {
+  'Platform analytics and metrics': 'Plattform-Auswertungen und Metriken',
+  'Total leads': 'Leads gesamt',
+  Won: 'Gewonnen',
+  Lost: 'Verloren',
+  'Invoice volume': 'Rechnungsvolumen',
+  Suppliers: 'Lieferanten',
+  'Lead sources': 'Lead-Quellen',
+  'Project phases': 'Projekt-Phasen',
+  unknown: 'unbekannt',
+  'System metrics': 'System-Metriken',
+  'Sync success rate': 'Sync-Erfolgsrate',
+  'Bot success rate': 'Bot-Erfolgsrate',
+  'Records synced': 'Records gesynct',
+  'Invoices paid': 'Rechnungen bezahlt',
+  'Tenant comparison': 'Tenant-Vergleich',
+  Offers: 'Angebote',
+  Projects: 'Projekte',
+}

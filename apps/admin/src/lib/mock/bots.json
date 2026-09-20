@@ -1,0 +1,158 @@
+[
+  {
+    "id": "inbox-triage",
+    "name": "Inbox Triage Bot",
+    "description": "Classifies incoming emails by category, priority, and suggests routing actions.",
+    "tier": "tier1",
+    "version": "0.1.0",
+    "requiredConnectors": [
+      "email"
+    ]
+  },
+  {
+    "id": "document-extract",
+    "name": "Document Extract Bot",
+    "description": "Extracts structured data from invoices, contracts, and other business documents.",
+    "tier": "tier1",
+    "version": "0.1.0",
+    "requiredConnectors": [],
+    "optionalConnectors": [
+      "storage"
+    ]
+  },
+  {
+    "id": "customer-support",
+    "name": "Customer Support Bot",
+    "description": "Answers customer questions using a knowledge base (RAG). Escalates complex queries to humans.",
+    "tier": "tier2",
+    "version": "0.1.0",
+    "requiredConnectors": [],
+    "optionalConnectors": [
+      "email",
+      "webhook"
+    ]
+  },
+  {
+    "id": "onboarding",
+    "name": "Onboarding Bot",
+    "description": "Normalizes and validates new entity data (customers, employees, vendors) and distributes to target systems.",
+    "tier": "tier2",
+    "version": "0.1.0",
+    "requiredConnectors": [],
+    "optionalConnectors": [
+      "crm",
+      "webhook"
+    ]
+  },
+  {
+    "id": "follow-up",
+    "name": "Follow-up & Reminder Bot",
+    "description": "Sends time-based follow-up emails with escalation levels. Evaluates targets and composes personalized reminders.",
+    "tier": "tier2",
+    "version": "0.1.0",
+    "requiredConnectors": [
+      "email"
+    ],
+    "optionalConnectors": [
+      "webhook"
+    ]
+  },
+  {
+    "id": "data-sync",
+    "name": "Data Sync Bot",
+    "description": "Synchronizes data between systems with field mapping, transformation, and AI-powered conflict resolution.",
+    "tier": "tier2",
+    "version": "0.1.0",
+    "requiredConnectors": [],
+    "optionalConnectors": [
+      "webhook",
+      "crm",
+      "custom"
+    ]
+  },
+  {
+    "id": "report-generator",
+    "name": "Report Generator Bot",
+    "description": "Generates structured business reports from data with AI-powered analysis and summaries.",
+    "tier": "tier2",
+    "version": "0.1.0",
+    "requiredConnectors": [],
+    "optionalConnectors": [
+      "storage",
+      "webhook"
+    ]
+  },
+  {
+    "id": "appointment",
+    "name": "Appointment Bot",
+    "description": "Finds available time slots from natural language requests and sends appointment reminders.",
+    "tier": "tier3",
+    "version": "0.1.0",
+    "requiredConnectors": [],
+    "optionalConnectors": [
+      "calendar",
+      "email"
+    ]
+  },
+  {
+    "id": "employee-mgmt",
+    "name": "Employee Management Bot",
+    "description": "Processes HR requests (vacation, sick leave, data changes) and triggers required workflows.",
+    "tier": "tier3",
+    "version": "0.1.0",
+    "requiredConnectors": [],
+    "optionalConnectors": [
+      "email",
+      "calendar",
+      "webhook"
+    ]
+  },
+  {
+    "id": "inventory",
+    "name": "Inventory Bot",
+    "description": "Monitors stock levels, expiry dates, and consumption patterns. Alerts on low stock and suggests reorders.",
+    "tier": "tier3",
+    "version": "0.1.0",
+    "requiredConnectors": [],
+    "optionalConnectors": [
+      "webhook",
+      "storage"
+    ]
+  },
+  {
+    "id": "billing",
+    "name": "Billing Bot",
+    "description": "Generates invoices from time entries and composes dunning notices for overdue payments.",
+    "tier": "tier3",
+    "version": "0.1.0",
+    "requiredConnectors": [],
+    "optionalConnectors": [
+      "email",
+      "accounting",
+      "webhook"
+    ]
+  },
+  {
+    "id": "tax-prep",
+    "name": "Tax Preparation Bot",
+    "description": "Categorizes expenses and receipts for tax preparation. Structures data for the tax advisor.",
+    "tier": "tier3",
+    "version": "0.1.0",
+    "requiredConnectors": [],
+    "optionalConnectors": [
+      "storage",
+      "accounting"
+    ]
+  },
+  {
+    "id": "review-analysis",
+    "name": "Review Analysis Bot",
+    "description": "Analyzes customer reviews and feedback. Extracts sentiment, themes, and provides actionable insights.",
+    "tier": "tier3",
+    "version": "0.1.0",
+    "requiredConnectors": [],
+    "optionalConnectors": [
+      "webhook"
+    ]
+  }
+]
