@@ -2,6 +2,8 @@
 
 [![CI](https://github.com/GodSmasher/botworks/actions/workflows/ci.yml/badge.svg)](https://github.com/GodSmasher/botworks/actions/workflows/ci.yml)
 
+[![botworks — a modular AI bot platform for small businesses](docs/banner.png)](https://botworks-psi.vercel.app/dashboard)
+
 > **Status: Showcase project — runtime, 13 bots, REST API and admin panel are complete and run fully offline in mock mode.**
 
 **Live demo → [botworks-psi.vercel.app/dashboard](https://botworks-psi.vercel.app/dashboard)** · no login, mock data only · switch EN/DE in the sidebar
