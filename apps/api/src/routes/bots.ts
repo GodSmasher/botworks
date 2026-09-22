@@ -1,6 +1,7 @@
 import { Hono } from 'hono'
 import { z } from 'zod'
 import { registry, createQueue, createLogger, type JobQueue } from '@botworks/core'
+import { connectorsFor } from '../connectors.js'
 import type { JobPayload, TriggerBotRequest } from '@botworks/types'
 
 const log = createLogger('routes:bots')
@@ -19,7 +20,7 @@ async function getQueue(): Promise<JobQueue> {
     queue.startWorker(async (payload: JobPayload) => {
       const bot = registry.get(payload.botId)
       if (!bot) throw new Error(`Bot "${payload.botId}" not found in registry`)
-      return bot.run(payload, new Map())
+      return bot.run(payload, connectorsFor(bot, payload.companyId))
     })
   }
   return queue
@@ -104,7 +105,7 @@ botsRouter.post('/:botId/run', async (c) => {
   }
 
   log('info', `Bot sync run: ${botId}`, { companyId: parsed.data.companyId })
-  const result = await bot.run(payload, new Map())
+  const result = await bot.run(payload, connectorsFor(bot, payload.companyId))
 
   return c.json({ ok: true, data: result })
 })
