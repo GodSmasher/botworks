@@ -10,7 +10,8 @@
     "demo": "npm run demo --workspace @botworks/api",
     "build": "npm run build --workspace @botworks/admin",
     "test": "vitest run",
-    "typecheck": "npm run typecheck --workspaces --if-present"
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "demo:record": "node scripts/record-demo.mjs"
   },
   "engines": {
     "node": ">=20"
@@ -21,6 +22,7 @@
     "apps/*"
   ],
   "devDependencies": {
+    "playwright": "^1.63.0",
     "vitest": "^4.1.11"
   }
 }

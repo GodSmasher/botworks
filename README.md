@@ -6,6 +6,8 @@
 
 **Live demo → [botworks-psi.vercel.app/dashboard](https://botworks-psi.vercel.app/dashboard)** · no login, mock data only · switch EN/DE in the sidebar
 
+![botworks admin panel walkthrough: dashboard, bot fleet, connectors, route bot, German switch, analytics](docs/demo.gif)
+
 Run everything locally — no API key, no Redis, no database:
 
 ```bash
@@ -109,6 +111,8 @@ flowchart LR
 | 3 — industry | `review-analysis` | Sentiment, themes and recommendations from customer reviews |
 
 Each bot ships `src/sample.ts` (an invented input) and `src/mock.ts` (its offline heuristics).
+
+The walkthrough GIF above is generated with `npm run demo:record` (Playwright + ffmpeg, see `scripts/record-demo.mjs`).
 
 ## Design
 
