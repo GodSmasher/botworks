@@ -2,7 +2,7 @@
 
 > **Status: Showcase project — runtime, 13 bots, REST API and admin panel are complete and run fully offline in mock mode.**
 
-**Live demo →** <!-- DEMO_URL --> *link follows after deployment* · switch EN/DE in the sidebar
+**Live demo → [botworks-psi.vercel.app/dashboard](https://botworks-psi.vercel.app/dashboard)** · no login, mock data only · switch EN/DE in the sidebar
 
 Run everything locally — no API key, no Redis, no database:
 
