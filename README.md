@@ -108,6 +108,10 @@ flowchart LR
 
 Each bot ships `src/sample.ts` (an invented input) and `src/mock.ts` (its offline heuristics).
 
+## Design
+
+The admin UI concept lives in Figma: [botworks – UI Redesign Concept](https://www.figma.com/design/zssQp5nKuqvlaBgkJW3tLJ) — five screens (dashboard, sales pipeline, analytics, finance & commissions, settings) that the admin panel and a field-sales frontend are derived from.
+
 ## Admin panel
 
 `apps/admin` — Next.js 14, server components, English with a German switch. Pages: platform dashboard, tenants and tenant detail, analytics, bot fleet with live status and logs, connectors with sync history, route bot (proximity-based visit suggestions for field staff), users, billing, compliance, reports, system health, settings.
