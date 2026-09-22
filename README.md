@@ -1,5 +1,7 @@
 # botworks — a modular AI bot platform for small businesses
 
+[![CI](https://github.com/GodSmasher/botworks/actions/workflows/ci.yml/badge.svg)](https://github.com/GodSmasher/botworks/actions/workflows/ci.yml)
+
 > **Status: Showcase project — runtime, 13 bots, REST API and admin panel are complete and run fully offline in mock mode.**
 
 **Live demo → [botworks-psi.vercel.app/dashboard](https://botworks-psi.vercel.app/dashboard)** · no login, mock data only · switch EN/DE in the sidebar
@@ -128,6 +130,11 @@ curl localhost:4000/api/bots/jobs/<jobId>                      # result once fin
 ```
 
 Set `API_SECRET` to require `X-API-Key` on `/api/*`.
+
+## Tests
+
+`npm test` runs the vitest suite offline (no API key, no Redis, no database).
+Covered: the in-memory queue (priorities, retries, depth), the AI mock path, all 13 bots with their sample inputs, input validation, the admin panel's mock query builder and the REST API routes driven in-process.
 
 ## Tech stack
 

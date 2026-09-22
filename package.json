@@ -1,6 +1,7 @@
 {
   "name": "botworks",
   "private": true,
+  "type": "module",
   "version": "0.1.0",
   "description": "botworks — a modular AI bot platform: shared runtime, 13 business bots, REST API and an admin panel.",
   "scripts": {
@@ -8,6 +9,7 @@
     "dev:api": "npm run dev --workspace @botworks/api",
     "demo": "npm run demo --workspace @botworks/api",
     "build": "npm run build --workspace @botworks/admin",
+    "test": "vitest run",
     "typecheck": "npm run typecheck --workspaces --if-present"
   },
   "engines": {
@@ -17,5 +19,8 @@
     "packages/*",
     "bots/*",
     "apps/*"
-  ]
+  ],
+  "devDependencies": {
+    "vitest": "^4.1.11"
+  }
 }
